@@ -270,7 +270,6 @@ public class TSP {
                 // create the initial population of chromosomes
                     chromosomes = new Chromosome[populationSize];
                     for (int x = 0; x < populationSize; x++) {
-                        System.out.println(cities.length);
                         chromosomes[x] = new Chromosome(cities);
                     }
 
