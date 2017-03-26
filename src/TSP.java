@@ -1,15 +1,10 @@
-import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.*;
-import java.sql.Time;
 import java.text.*;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
-import java.util.Arrays;
 import java.util.ArrayList;
-import java.awt.*; 
 
 import javax.swing.*;
 
@@ -82,7 +77,7 @@ public class TSP {
     private static TextArea statsText;
 
 
-    /*
+    /**
      * Writing to an output file with the costs.
      */
     private static void writeLog(String content) {
@@ -99,8 +94,8 @@ public class TSP {
         }
     }
 
-    /*
-     *  Deals with printing same content to System.out and GUI
+    /**
+     * Deals with printing same content to System.out and GUI
      */
     private static void print(boolean guiEnabled, String content) {
         if(guiEnabled) {
@@ -275,6 +270,7 @@ public class TSP {
                 // create the initial population of chromosomes
                     chromosomes = new Chromosome[populationSize];
                     for (int x = 0; x < populationSize; x++) {
+                        System.out.println(cities.length);
                         chromosomes[x] = new Chromosome(cities);
                     }
 
