@@ -158,23 +158,18 @@ class Chromosome {
             return cityList;
         }
 
-        System.out.println("cityList: "+cityList.toString());
         int[] cityListMutated = new int[cityList.length];
         int[] bounds = generate_bounds();
-        System.out.println("lower and upper bounds: "+bounds.toString());
 
         //create an array which is a mutated version of a subarray of cityList
         int len_subarray = (bounds[1]-bounds[0])+1;
         int[] subarray = new int[len_subarray];
         System.arraycopy(cityList,bounds[0],subarray,0,len_subarray);
-        System.out.println("subarray: "+subarray.toString());
         int[] mutated_subarray = reverse_array(subarray);
-        System.out.println("mutated_subarray: "+mutated_subarray.toString());
 
         //copy the values from cityList into cityListMutated up until the lower bound
         int limit = bounds[0]-1;
         System.arraycopy(cityList,0,cityListMutated,0,limit);
-        System.out.println("cityListMutated, cityList below lower: "+cityListMutated.toString());
 
         //copy all the values from mutated_subarray into cityListMutated
         System.arraycopy(mutated_subarray, 0, cityListMutated, bounds[0], mutated_subarray.length);
@@ -182,7 +177,6 @@ class Chromosome {
         //copy all the values from cityList (occurring after the upper bound) into cityListMutated
         limit=bounds[1]+1;
         System.arraycopy(cityList,limit,cityListMutated,limit, cityListMutated.length-limit);
-        System.out.println("cityListMutated, cityList above upper: "+cityListMutated.toString());
 
         return cityListMutated;
     }
