@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90526f71-b1ed-4d7a-b364-f0f5a01730dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results.out" afterPath="$PROJECT_DIR$/results.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chromosome.java" afterPath="$PROJECT_DIR$/src/Chromosome.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSP.java" afterPath="$PROJECT_DIR$/src/TSP.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="TSP.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TSP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1598">
-              <caret line="124" column="29" lean-forward="false" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+            <state relative-caret-position="163">
+              <caret line="302" column="67" lean-forward="false" selection-start-line="302" selection-start-column="67" selection-end-line="302" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
@@ -42,9 +40,9 @@
                 <element signature="method#print#0;class#TSP#0" expanded="false" />
                 <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
                 <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-                <element signature="e#3952#3990#0" expanded="false" />
+                <element signature="e#3890#3928#0" expanded="false" />
                 <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-                <element signature="e#5622#5628#0" expanded="true" />
+                <element signature="e#5560#5566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -600,12 +598,12 @@
       <workItem from="1490640019521" duration="1190000" />
       <workItem from="1490975293900" duration="3390000" />
       <workItem from="1490986265726" duration="5601000" />
-      <workItem from="1490991991906" duration="2063000" />
+      <workItem from="1490991991906" duration="2759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16177000" />
+    <option name="totallyTimeSpent" value="16873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -621,7 +619,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29716024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29716024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -682,9 +680,9 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3952#3990#0" expanded="false" />
+            <element signature="e#3890#3928#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#5622#5628#0" expanded="true" />
+            <element signature="e#5560#5566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,9 +747,9 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3952#3990#0" expanded="false" />
+            <element signature="e#3890#3928#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#5622#5628#0" expanded="true" />
+            <element signature="e#5560#5566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,9 +814,9 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3952#3990#0" expanded="false" />
+            <element signature="e#3890#3928#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#5622#5628#0" expanded="true" />
+            <element signature="e#5560#5566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -883,9 +881,9 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3952#3990#0" expanded="false" />
+            <element signature="e#3890#3928#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#5622#5628#0" expanded="true" />
+            <element signature="e#5560#5566#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -973,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TSP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1598">
-          <caret line="124" column="29" lean-forward="false" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+        <state relative-caret-position="163">
+          <caret line="302" column="67" lean-forward="false" selection-start-line="302" selection-start-column="67" selection-end-line="302" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
@@ -994,9 +992,9 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3952#3990#0" expanded="false" />
+            <element signature="e#3890#3928#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#5622#5628#0" expanded="true" />
+            <element signature="e#5560#5566#0" expanded="true" />
           </folding>
         </state>
       </provider>

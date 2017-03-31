@@ -106,7 +106,11 @@ public class TSP {
     }
 
     public static void evolve() {
-        //Best Chromosome put at the front of the chromosomes
+
+        for(Chromosome chromosome: chromosomes){
+            chromosome.calculateCost(cities);
+        }
+
         Chromosome.sortChromosomes(chromosomes, chromosomes.length);
 
         for(int i=0; i<populationSize; ++i){
@@ -119,11 +123,8 @@ public class TSP {
                 chromosomes[0]=chromosomes[populationSize-1];
             }
             else if(i!=populationSize-1){
-                for(int j = populationSize -2; j >= populationSize-3; j--){
-                    if(chromosomes[populationSize-1].getCost()<chromosomes[j].getCost()){
-                        chromosomes[j]=chromosomes[populationSize-1];
-                        break;
-                    }
+                if(chromosomes[populationSize-1].getCost()<chromosomes[populationSize-2].getCost()){
+                    chromosomes[populationSize-2]=chromosomes[populationSize-1];
                 }
             }
         }
@@ -297,9 +298,9 @@ public class TSP {
                     double thisCost = 0.0;
 
                     while (generation < 100) {
-                        evolve();
                         if(generation % 5 == 0 )
                             cities = MoveCities(originalCities); //Move from original cities, so they only move by a maximum of one unit.
+                        evolve();//reduces the average significantly
                         generation++;
 
                         Chromosome.sortChromosomes(chromosomes, populationSize);
