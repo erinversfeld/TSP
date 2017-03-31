@@ -106,7 +106,27 @@ public class TSP {
     }
 
     public static void evolve() {
-        //Write evolution code here.
+        //Best Chromosome put at the front of the chromosomes
+        Chromosome.sortChromosomes(chromosomes, chromosomes.length);
+
+        for(int i=0; i<populationSize; ++i){
+            chromosomes[populationSize-1] = null;
+
+            int[] mutatedBestChromosome = chromosomes[0].mutate();
+            chromosomes[populationSize-1] = new Chromosome(cities, mutatedBestChromosome);
+
+            if(chromosomes[populationSize-1].getCost()<chromosomes[0].getCost()){
+                chromosomes[0]=chromosomes[populationSize-1];
+            }
+            else if(i!=populationSize-1){
+                for(int j = populationSize -2; j >= populationSize-3; j--){
+                    if(chromosomes[populationSize-1].getCost()<chromosomes[j].getCost()){
+                        chromosomes[j]=chromosomes[populationSize-1];
+                        break;
+                    }
+                }
+            }
+        }
     }
 
     /**
@@ -227,7 +247,7 @@ public class TSP {
         } else {
 
             if (args.length > 1) {
-                display = true; 
+                display = true;
             }
 
             try {
@@ -244,13 +264,13 @@ public class TSP {
                     frame.setSize(width + 300, height);
                     frame.setResizable(false);
                     frame.setLayout(new BorderLayout());
-                    
+
                     statsText = new TextArea(35, 35);
                     statsText.setEditable(false);
 
                     statsArea.add(statsText);
                     frame.add(statsArea, BorderLayout.EAST);
-                    
+
                     frame.setVisible(true);
                 }
 
@@ -278,7 +298,7 @@ public class TSP {
 
                     while (generation < 100) {
                         evolve();
-                        if(generation % 5 == 0 ) 
+                        if(generation % 5 == 0 )
                             cities = MoveCities(originalCities); //Move from original cities, so they only move by a maximum of one unit.
                         generation++;
 
@@ -289,7 +309,7 @@ public class TSP {
                         if (thisCost < genMin || genMin == 0) {
                             genMin = thisCost;
                         }
-                        
+
                         NumberFormat nf = NumberFormat.getInstance();
                         nf.setMinimumFractionDigits(2);
                         nf.setMinimumFractionDigits(2);
