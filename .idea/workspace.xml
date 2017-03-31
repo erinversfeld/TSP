@@ -4,6 +4,7 @@
     <list default="true" id="90526f71-b1ed-4d7a-b364-f0f5a01730dd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results.out" afterPath="$PROJECT_DIR$/results.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chromosome.java" afterPath="$PROJECT_DIR$/src/Chromosome.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSP.java" afterPath="$PROJECT_DIR$/src/TSP.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TSP.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TSP.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TSP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="131" column="49" lean-forward="false" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
@@ -35,29 +36,45 @@
                 <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
                 <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
                 <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+                <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+                <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+                <element signature="method#print#0;class#TSP#0" expanded="false" />
                 <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
                 <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-                <element signature="e#3890#3928#0" expanded="false" />
-                <element signature="e#5560#5566#0" expanded="true" />
+                <element signature="e#4432#4470#0" expanded="false" />
+                <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+                <element signature="e#6111#6117#0" expanded="true" />
+                <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="171" column="54" lean-forward="false" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
+            <state relative-caret-position="77">
+              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-                <element signature="e#2158#2159#0" expanded="true" />
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2325#2326#0" expanded="true" />
-                <element signature="e#2805#2806#0" expanded="true" />
-                <element signature="e#2844#2845#0" expanded="true" />
+                <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+                <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+                <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -77,8 +94,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/TSP.java" />
         <option value="$PROJECT_DIR$/src/Chromosome.java" />
+        <option value="$PROJECT_DIR$/src/TSP.java" />
       </list>
     </option>
   </component>
@@ -121,6 +138,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,10 +613,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19378000" />
+    <option name="totallyTimeSpent" value="21265000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -598,7 +629,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29716024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29716024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -659,23 +690,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,10 +708,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -725,12 +744,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,10 +783,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,12 +819,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -812,10 +858,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -843,12 +894,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -871,10 +933,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -902,12 +969,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,10 +1031,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -968,12 +1051,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,10 +1090,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1018,12 +1117,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1046,10 +1156,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1068,12 +1183,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1096,10 +1222,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,12 +1249,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1146,10 +1288,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1168,12 +1315,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1192,12 +1350,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1227,10 +1396,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1253,10 +1427,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1268,12 +1447,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1296,10 +1486,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1318,12 +1513,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1346,10 +1552,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1368,12 +1579,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1396,10 +1618,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1418,12 +1645,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1446,10 +1684,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1468,12 +1711,23 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1492,10 +1746,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CityList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#Chromosome#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#mutate#0;class#Chromosome#0" expanded="false" />
+            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TSP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="131" column="49" lean-forward="false" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
@@ -1510,27 +1800,15 @@
             <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
             <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#3890#3928#0" expanded="false" />
-            <element signature="e#5560#5566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="171" column="54" lean-forward="false" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
+            <element signature="e#4432#4470#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="e#6111#6117#0" expanded="true" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
           </folding>
         </state>
       </provider>

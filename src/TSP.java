@@ -15,72 +15,72 @@ public class TSP {
     /**
      * How many cities to use.
      */
-    protected static int cityCount;
+    /*GIVEN*/protected static int cityCount;
 
     /**
      * How many chromosomes to use.
      */
-    protected static int populationSize = 100; //DO NOT CHANGE THIS.
+    /*GIVEN*/protected static int populationSize = 100; //DO NOT CHANGE THIS.
 
     /**
      * The part of the population eligable for mating.
      */
-    protected static int matingPopulationSize;
+    /*GIVEN*/protected static int matingPopulationSize;
 
     /**
      * The part of the population selected for mating.
      */
-    protected static int selectedParents;
+    /*GIVEN*/protected static int selectedParents;
 
     /**
      * The current generation
      */
-    protected static int generation;
+    /*GIVEN*/protected static int generation;
 
     /**
      * The list of cities (with current movement applied).
      */
-    protected static City[] cities;
+    /*GIVEN*/protected static City[] cities;
     
     /**
      * The list of cities that will be used to determine movement.
      */
-    private static City[] originalCities;
+    /*GIVEN*/private static City[] originalCities;
 
     /**
      * The list of chromosomes.
      */
-    protected static Chromosome[] chromosomes;
+    /*GIVEN*/protected static Chromosome[] chromosomes;
 
     /**
     * Frame to display cities and paths
     */
-    private static JFrame frame;
+    /*GIVEN*/private static JFrame frame;
 
     /**
      * Integers used for statistical data
      */
-    private static double min;
-    private static double avg;
-    private static double max;
-    private static double sum;
-    private static double genMin;
+    /*GIVEN*/private static double min;
+    /*GIVEN*/private static double avg;
+    /*GIVEN*/private static double max;
+    /*GIVEN*/private static double sum;
+    /*GIVEN*/private static double genMin;
 
     /**
      * Width and Height of City Map, DO NOT CHANGE THESE VALUES!
      */
-    private static int width = 600;
-    private static int height = 600;
+    /*GIVEN*/private static int width = 600;
+    /*GIVEN*/private static int height = 600;
 
 
-    private static Panel statsArea;
-    private static TextArea statsText;
+    /*GIVEN*/private static Panel statsArea;
+    /*GIVEN*/private static TextArea statsText;
 
 
     /**
      * Writing to an output file with the costs.
      */
-    private static void writeLog(String content) {
+    /*GIVEN*/private static void writeLog(String content) {
         String filename = "results.out";
         FileWriter out;
 
@@ -97,7 +97,7 @@ public class TSP {
     /**
      * Deals with printing same content to System.out and GUI
      */
-    private static void print(boolean guiEnabled, String content) {
+    /*GIVEN*/private static void print(boolean guiEnabled, String content) {
         if(guiEnabled) {
             statsText.append(content + "\n");
         }
@@ -105,26 +105,34 @@ public class TSP {
         System.out.println(content);
     }
 
-    public static void evolve() {
+    /*WRITTEN*/public static void evolve() {
 
+        //establish the current costs
         for(Chromosome chromosome: chromosomes){
             chromosome.calculateCost(cities);
         }
 
+        //shortest route first
         Chromosome.sortChromosomes(chromosomes, chromosomes.length);
 
+        int last_index = populationSize-1;
+
         for(int i=0; i<populationSize; ++i){
-            chromosomes[populationSize-1] = null;
+            chromosomes[last_index] = null;
 
-            int[] mutatedBestChromosome = chromosomes[0].mutate();
-            chromosomes[populationSize-1] = new Chromosome(cities, mutatedBestChromosome);
+            //chromosomes[0] is the best from the previous generation, so use it to form the next generation
+            int[] mutatedParent = chromosomes[0].mutate();
+            //replace the worst performing chromosome with a child of the best performing chromosome in the
+            // previous gen
+            chromosomes[last_index] = new Chromosome(cities, mutatedParent);
 
-            if(chromosomes[populationSize-1].getCost()<chromosomes[0].getCost()){
-                chromosomes[0]=chromosomes[populationSize-1];
+            if(chromosomes[last_index].getCost()<chromosomes[0].getCost()){
+                chromosomes[0]=chromosomes[last_index];
             }
-            else if(i!=populationSize-1){
-                if(chromosomes[populationSize-1].getCost()<chromosomes[populationSize-2].getCost()){
-                    chromosomes[populationSize-2]=chromosomes[populationSize-1];
+            //if we're not at the last chromosome
+            else if(i!=last_index){
+                if(chromosomes[last_index].getCost()<chromosomes[last_index-1].getCost()){
+                    chromosomes[last_index-1]=chromosomes[last_index];
                 }
             }
         }
@@ -133,7 +141,7 @@ public class TSP {
     /**
      * Update the display
      */
-    public static void updateGUI() {
+    /*GIVEN*/public static void updateGUI() {
         Image img = frame.createImage(width, height);
         Graphics g = img.getGraphics();
         FontMetrics fm = g.getFontMetrics();
@@ -184,7 +192,7 @@ public class TSP {
         frame.getGraphics().drawImage(img, 0, 0, frame);
     }
 
-    private static City[] LoadCitiesFromFile(String filename, City[] citiesArray) {
+    /*GIVEN*/private static City[] LoadCitiesFromFile(String filename, City[] citiesArray) {
         ArrayList<City> cities = new ArrayList<City>();
         try 
         {
@@ -206,7 +214,7 @@ public class TSP {
         return cities.toArray(citiesArray);
     }
 
-    private static City[] MoveCities(City[]cities) {
+    /*GIVEN*/private static City[] MoveCities(City[]cities) {
     	City[] newPositions = new City[cities.length];
         Random randomGenerator = new Random();
 
@@ -232,7 +240,7 @@ public class TSP {
         return newPositions;
     }
 
-    public static void main(String[] args) {
+    /*GIVEN*/public static void main(String[] args) {
         DateFormat df = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
         Date today = Calendar.getInstance().getTime();
         String currentTime  = df.format(today);

@@ -23,22 +23,23 @@ class Chromosome {
     Chromosome(City[] cities, int[] mutatedParent) {
         Random generator = new Random();
         cityList = new int[cities.length];
-        //cities are visited based on the order of an integer representation [o,n] of each of the n cities.
-        for (int x = 0; x < cities.length; x++) {
-            cityList[x] = x;
-        }
 
+        //called from evolve
         if(mutatedParent.length>0){
-            random = new Random();
-            cityList = new int[cities.length];
             for (int x = 0; x < cities.length; x++) {
                 cityList[x] = mutatedParent[x];
             }
             calculateCost(cities);
         }
 
-        //shuffle the order so we have a random initial order
+        //called from main
         else {
+            //cities are visited based on the order of an integer representation [o,n] of each of the n cities.
+            for (int x = 0; x < cities.length; x++) {
+                cityList[x] = x;
+            }
+
+            //shuffle the order so we have a random initial order
             for (int y = 0; y < cityList.length; y++) {
                 int temp = cityList[y];
                 int randomNum = generator.nextInt(cityList.length);
@@ -54,7 +55,7 @@ class Chromosome {
      *
      * @param cities A list of cities.
      */
-    void calculateCost(City[] cities) {
+    /*GIVEN*/void calculateCost(City[] cities) {
         cost = 0;
         for (int i = 0; i < cityList.length - 1; i++) {
             double dist = cities[cityList[i]].proximity(cities[cityList[i + 1]]);
@@ -68,7 +69,7 @@ class Chromosome {
      * Get the cost for this chromosome. This is the amount of distance that
      * must be traveled.
      */
-    double getCost() {
+    /*GIVEN*/double getCost() {
         return cost;
     }
 
@@ -76,7 +77,7 @@ class Chromosome {
      * @param i The city you want.
      * @return The ith city.
      */
-    int getCity(int i) {
+    /*GIVEN*/int getCity(int i) {
         return cityList[i];
     }
 
@@ -85,7 +86,7 @@ class Chromosome {
      *
      * @param list A list of cities.
      */
-    void setCities(int[] list) {
+    /*GIVEN*/void setCities(int[] list) {
         for (int i = 0; i < cityList.length; i++) {
             cityList[i] = list[i];
         }
@@ -97,16 +98,15 @@ class Chromosome {
      * @param index The city index to change
      * @param value The city number to place into the index.
      */
-    void setCity(int index, int value) {
+    /*GIVEN*/void setCity(int index, int value) {
         cityList[index] = value;
     }
-
 
     /**
      *Generate upper and lower bound of sub array
      *@return bound[0] is the lower bound and bound[1] the upper bound
      */
-    private int[] generate_bounds(){
+    /*WRITTEN*/private int[] generate_bounds(){
         int[] bounds = new int[2];
 
         int lower_bound = random.nextInt(cityList.length);
@@ -133,13 +133,12 @@ class Chromosome {
         return bounds;
     }
 
-
     /**
      * Reverses the order of values stored in an int array
      * @param array the array in need of reversing
      * @return the array with its indices reversed
      */
-    private int[] reverse_array(int[] array){
+    /*WRITTEN*/private int[] reverse_array(int[] array){
         for(int i = 0; i<=array.length/2; i++){
             int temp = array[i];
             array[i] = array[array.length-i-1];
@@ -152,7 +151,7 @@ class Chromosome {
      * Chromosome undergoes a mutation
      * @return the mutated chromosome
      */
-    public int[] mutate(){
+    /*WRITTEN*/public int[] mutate(){
         //EDGE CASE: there is only one city or there are no cities
         if(cityList.length <= 1){
             return cityList;
@@ -191,7 +190,7 @@ class Chromosome {
      * @param chromosomes An array of chromosomes to sort.
      * @param num         How much of the chromosome list to sort.
      */
-    public static void sortChromosomes(Chromosome chromosomes[], int num) {
+    /*GIVEN*/public static void sortChromosomes(Chromosome chromosomes[], int num) {
         Chromosome ctemp;
         boolean swapped = true;
         while (swapped) {
