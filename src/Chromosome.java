@@ -169,6 +169,10 @@ class Chromosome {
 
         //copy the values from cityList into cityListMutated up until the lower bound
         int limit = bounds[0]-1;
+        //EDGE CASE: the lower bound is the first index
+        if(bounds[0]>=0){
+            limit = bounds[0];
+        }
         System.arraycopy(cityList,0,cityListMutated,0,limit);
 
         //copy all the values from mutated_subarray into cityListMutated
