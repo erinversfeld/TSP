@@ -291,16 +291,17 @@ public class TSP {
                 // create the initial population of chromosomes
                     chromosomes = new Chromosome[populationSize];
                     for (int x = 0; x < populationSize; x++) {
-                        chromosomes[x] = new Chromosome(cities);
+                        int[] t = new int[0];
+                        chromosomes[x] = new Chromosome(cities,t);
                     }
 
                     generation = 0;
                     double thisCost = 0.0;
 
                     while (generation < 100) {
+                        evolve();
                         if(generation % 5 == 0 )
                             cities = MoveCities(originalCities); //Move from original cities, so they only move by a maximum of one unit.
-                        evolve();//reduces the average significantly
                         generation++;
 
                         Chromosome.sortChromosomes(chromosomes, populationSize);
