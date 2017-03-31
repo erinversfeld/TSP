@@ -126,12 +126,14 @@ public class TSP {
             // previous gen
             chromosomes[last_index] = new Chromosome(cities, mutatedParent);
 
+            //if we ended up creating a better chromosome, replace the best chromosome with the current chromosome
             if(chromosomes[last_index].getCost()<chromosomes[0].getCost()){
                 chromosomes[0]=chromosomes[last_index];
             }
-            //if we're not at the last chromosome
+
             else if(i!=last_index){
                 if(chromosomes[last_index].getCost()<chromosomes[last_index-1].getCost()){
+                    //this maintains the ordering
                     chromosomes[last_index-1]=chromosomes[last_index];
                 }
             }
