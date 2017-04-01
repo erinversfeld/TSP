@@ -18,16 +18,16 @@ class Chromosome {
     /**
      *Constructor method for 
      * @param cities The order that this chromosome would visit the cities.
-     * @param mutatedParent A mutated version of the best performing
+     * @param parent The best performing chromosome last time
      */
-    Chromosome(City[] cities, int[] mutatedParent) {
+    Chromosome(City[] cities, int[] parent) {
         Random generator = new Random();
         cityList = new int[cities.length];
 
         //called from evolve
-        if(mutatedParent.length>0){
+        if(parent.length>0){
             for (int x = 0; x < cities.length; x++) {
-                cityList[x] = mutatedParent[x];
+                cityList[x] = parent[x];
             }
             calculateCost(cities);
         }
@@ -76,13 +76,18 @@ class Chromosome {
                 }
                 //update the order according to our results
                 int temp = cityList[neighbourIndex];
-                cityList[neighbourIndex] = cityList[i];
-                cityList[i] = temp;
+                if(i!=cityList.length-1){
+                    cityList[neighbourIndex] = cityList[i+1];
+                    cityList[i+1] = temp;
+                }
+                else{
+                    cityList[neighbourIndex] = cityList[i];
+                    cityList[i] = temp;
+                }
             }
             calculateCost(cities);
         }
     }
-
 
     /**
      * Calculate the cost of the specified list of cities.
@@ -185,7 +190,7 @@ class Chromosome {
      * Chromosome undergoes a mutation
      * @return the mutated chromosome
      */
-    /*WRITTEN*/public int[] mutate(){
+    /*WRITTEN*/public int[] inversion(){
         //EDGE CASE: there is only one city or there are no cities
         if(cityList.length <= 1){
             return cityList;

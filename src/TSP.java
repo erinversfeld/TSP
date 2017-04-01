@@ -121,9 +121,8 @@ public class TSP {
             chromosomes[last_index] = null;
 
             //chromosomes[0] is the best from the previous generation, so use it to form the next generation
-            int[] mutatedParent = chromosomes[0].mutate();
-            //replace the worst performing chromosome with a child of the best performing chromosome in the
-            // previous gen
+            int[] mutatedParent = chromosomes[0].inversion();
+            //replace the worst performing chromosome with a child of the best performing chromosome
             chromosomes[last_index] = new Chromosome(cities, mutatedParent);
 
             //if we ended up creating a better chromosome, replace the best chromosome with the current chromosome
