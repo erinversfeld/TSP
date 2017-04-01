@@ -50,6 +50,7 @@ class Chromosome {
             calculateCost(cities);
             //nearest neighbour first
             int startingPoint = cityList[0];//the first city is always where we start, and we minimise distances from there
+            int nextIndex = 1;
             int nextCity = cityList[1];
             int distance = cities[startingPoint].proximity(cities[nextCity]);
             //set it up so that the distance between the first two is minimised
@@ -57,9 +58,15 @@ class Chromosome {
                 int neighbourCity = cityList[i];
                 int temp_dist = cities[startingPoint].proximity(cities[neighbourCity]);
                 if(temp_dist<distance){
+                    nextIndex = i;
                     distance = temp_dist;
-                    nextCity = neighbourCity;
                 }
+            }
+            //if we found a closer city at a different index we swap them
+            if(nextIndex!=1) {
+                int temp = cityList[nextIndex];
+                cityList[nextIndex] = cityList[1];
+                cityList[1] = temp;
             }
             //now we order the rest according to the same principle
             for(int i = 1; i<cityList.length; i++){
