@@ -46,9 +46,43 @@ class Chromosome {
                 cityList[y] = cityList[randomNum];
                 cityList[randomNum] = temp;
             }
+
+            calculateCost(cities);
+            //nearest neighbour first
+            int startingPoint = cityList[0];//the first city is always where we start, and we minimise distances from there
+            int nextCity = cityList[1];
+            int distance = cities[startingPoint].proximity(cities[nextCity]);
+            //set it up so that the distance between the first two is minimised
+            for(int i = 2; i<cityList.length; i++){
+                int neighbourCity = cityList[i];
+                int temp_dist = cities[startingPoint].proximity(cities[neighbourCity]);
+                if(temp_dist<distance){
+                    distance = temp_dist;
+                    nextCity = neighbourCity;
+                }
+            }
+            //now we order the rest according to the same principle
+            for(int i = 1; i<cityList.length; i++){
+                int currentCity = cityList[i];
+                int neighbourIndex = i;
+                int dist = 1000000000;
+                for(int j = i+2; j<cityList.length; j++){
+                    int alternativeNeighbour = cityList[j];
+                    int alternativeDist = cities[currentCity].proximity(cities[alternativeNeighbour]);
+                    if(alternativeDist<dist){
+                        neighbourIndex = j;
+                        dist = alternativeDist;
+                    }
+                }
+                //update the order according to our results
+                int temp = cityList[neighbourIndex];
+                cityList[neighbourIndex] = cityList[i];
+                cityList[i] = temp;
+            }
             calculateCost(cities);
         }
     }
+
 
     /**
      * Calculate the cost of the specified list of cities.
