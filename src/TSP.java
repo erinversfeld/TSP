@@ -106,7 +106,28 @@ public class TSP {
     }
 
     public static void evolve() {
-        //Write evolution code here.
+
+        for(Chromosome chromosome: chromosomes){
+            chromosome.calculateCost(cities);
+        }
+
+        Chromosome.sortChromosomes(chromosomes, chromosomes.length);
+
+        for(int i=0; i<populationSize; ++i){
+            chromosomes[populationSize-1] = null;
+
+            int[] mutatedBestChromosome = chromosomes[0].mutate();
+            chromosomes[populationSize-1] = new Chromosome(cities, mutatedBestChromosome);
+
+            if(chromosomes[populationSize-1].getCost()<chromosomes[0].getCost()){
+                chromosomes[0]=chromosomes[populationSize-1];
+            }
+            else if(i!=populationSize-1){
+                if(chromosomes[populationSize-1].getCost()<chromosomes[populationSize-2].getCost()){
+                    chromosomes[populationSize-2]=chromosomes[populationSize-1];
+                }
+            }
+        }
     }
 
     /**
@@ -227,7 +248,7 @@ public class TSP {
         } else {
 
             if (args.length > 1) {
-                display = true; 
+                display = true;
             }
 
             try {
@@ -244,13 +265,13 @@ public class TSP {
                     frame.setSize(width + 300, height);
                     frame.setResizable(false);
                     frame.setLayout(new BorderLayout());
-                    
+
                     statsText = new TextArea(35, 35);
                     statsText.setEditable(false);
 
                     statsArea.add(statsText);
                     frame.add(statsArea, BorderLayout.EAST);
-                    
+
                     frame.setVisible(true);
                 }
 
@@ -277,9 +298,9 @@ public class TSP {
                     double thisCost = 0.0;
 
                     while (generation < 100) {
-                        evolve();
-                        if(generation % 5 == 0 ) 
+                        if(generation % 5 == 0 )
                             cities = MoveCities(originalCities); //Move from original cities, so they only move by a maximum of one unit.
+                        evolve();//reduces the average significantly
                         generation++;
 
                         Chromosome.sortChromosomes(chromosomes, populationSize);
@@ -289,7 +310,7 @@ public class TSP {
                         if (thisCost < genMin || genMin == 0) {
                             genMin = thisCost;
                         }
-                        
+
                         NumberFormat nf = NumberFormat.getInstance();
                         nf.setMinimumFractionDigits(2);
                         nf.setMinimumFractionDigits(2);
