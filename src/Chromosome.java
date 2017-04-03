@@ -15,24 +15,12 @@ class Chromosome {
 
     private Random random = new Random();
 
-    Chromosome(City[] cities, int[] ordering) {
-        random = new Random();
-
-        cityList = new int[cities.length];
-        for (int x = 0; x < cities.length; x++) {
-            cityList[x] = ordering[x];
-        }
-
-        calculateCost(cities);
-    }
-
-
     /**
-     *
+     *Constructor method for 
      * @param cities The order that this chromosome would visit the cities.
-     * //@param order_given If the order is given the cities are not shuffled
+     * @param mutatedParent A mutated version of the best performing
      */
-    Chromosome(City[] cities/*, boolean order_given*/) {
+    Chromosome(City[] cities, int[] mutatedParent) {
         Random generator = new Random();
         cityList = new int[cities.length];
         //cities are visited based on the order of an integer representation [o,n] of each of the n cities.
@@ -40,20 +28,25 @@ class Chromosome {
             cityList[x] = x;
         }
 
-       /* if(order_given){
+        if(mutatedParent.length>0){
+            random = new Random();
+            cityList = new int[cities.length];
+            for (int x = 0; x < cities.length; x++) {
+                cityList[x] = mutatedParent[x];
+            }
             calculateCost(cities);
-        }*/
-        //shuffle the order so we have a random initial order
-        /*else {*/
-        for (int y = 0; y < cityList.length; y++) {
-            int temp = cityList[y];
-            int randomNum = generator.nextInt(cityList.length);
-            cityList[y] = cityList[randomNum];
-            cityList[randomNum] = temp;
         }
 
-        calculateCost(cities);
-        /*}*/
+        //shuffle the order so we have a random initial order
+        else {
+            for (int y = 0; y < cityList.length; y++) {
+                int temp = cityList[y];
+                int randomNum = generator.nextInt(cityList.length);
+                cityList[y] = cityList[randomNum];
+                cityList[randomNum] = temp;
+            }
+            calculateCost(cities);
+        }
     }
 
     /**
@@ -140,6 +133,7 @@ class Chromosome {
         return bounds;
     }
 
+
     /**
      * Reverses the order of values stored in an int array
      * @param array the array in need of reversing
@@ -158,7 +152,7 @@ class Chromosome {
      * Chromosome undergoes a mutation
      * @return the mutated chromosome
      */
-   /* public int[] mutate(){
+    public int[] mutate(){
         //EDGE CASE: there is only one city or there are no cities
         if(cityList.length <= 1){
             return cityList;
@@ -191,40 +185,6 @@ class Chromosome {
         System.out.println("cityListMutated, cityList above upper: "+cityListMutated.toString());
 
         return cityListMutated;
-    }*/
-
-
-    public int[] mutate() {
-        // Add handling of singular city list
-        if (cityList.length <= 1) {
-            int[] copy = new int[cityList.length];
-            System.arraycopy(cityList.clone(), 0, copy, 0, cityList.length);
-            return copy;
-        }
-
-        // Find two different indices of the cityList
-        int x1 = random.nextInt(cityList.length);
-        int x2;
-        do {
-            x2 = random.nextInt(cityList.length);
-        } while (x2 == x1);
-
-        // Ensure that x1 < x2
-        if (x1 > x2) {
-            int tmp = x2;
-            x2 = x1;
-            x1 = tmp;
-        }
-
-        // Make a copy of the existing cityList and apply the inversion between x1 and x2
-        int[] mutatedCityList = new int[cityList.length];
-        System.arraycopy(cityList, 0, mutatedCityList, 0, cityList.length);
-        int g = x1;
-        for (int i = x2; i >= x1; --i, ++g) {
-            mutatedCityList[g] = cityList[i];
-        }
-
-        return mutatedCityList;
     }
 
     /**
