@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90526f71-b1ed-4d7a-b364-f0f5a01730dd" name="Default" comment="" />
+    <list default="true" id="90526f71-b1ed-4d7a-b364-f0f5a01730dd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run_history/results.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/submission/results.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/submission/src/Chromosome.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/submission/src/City.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/submission/src/TSP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TSP/TSP.class" afterPath="$PROJECT_DIR$/out/production/TSP/TSP.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results.out" afterPath="$PROJECT_DIR$/results.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chromosome.java" afterPath="$PROJECT_DIR$/src/Chromosome.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSP.java" afterPath="$PROJECT_DIR$/src/TSP.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +27,8 @@
       <file leaf-file-name="TSP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TSP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="195" column="35" lean-forward="false" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="35" />
+            <state relative-caret-position="-1">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
@@ -37,9 +48,8 @@
                 <element signature="method#print#0;class#TSP#0" expanded="false" />
                 <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
                 <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-                <element signature="e#4516#4554#0" expanded="false" />
+                <element signature="e#4515#4553#0" expanded="false" />
                 <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-                <element signature="e#6195#6201#0" expanded="true" />
                 <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
                 <element signature="method#main#0;class#TSP#0" expanded="false" />
               </folding>
@@ -47,11 +57,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="results.out" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_history/results.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.out" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submission/results.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="results.out" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results.out">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TSP.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/submission/src/TSP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chromosome.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="1156">
+              <caret line="74" column="107" lean-forward="false" selection-start-line="74" selection-start-column="107" selection-end-line="74" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
@@ -98,8 +148,8 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Chromosome2.java" />
-        <option value="$PROJECT_DIR$/src/TSP.java" />
         <option value="$PROJECT_DIR$/src/Chromosome.java" />
+        <option value="$PROJECT_DIR$/src/TSP.java" />
       </list>
     </option>
   </component>
@@ -131,9 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,12 +203,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="submission" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TSP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="run_history" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,6 +234,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Erin\IdeaProjects\TSP\submission" />
+      <recent name="C:\Users\Erin\IdeaProjects\TSP" />
+      <recent name="C:\Users\Erin\IdeaProjects\TSP\run_history" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Erin\IdeaProjects\TSP" />
     </key>
@@ -614,46 +683,50 @@
       <workItem from="1490986265726" duration="5601000" />
       <workItem from="1490991991906" duration="3340000" />
       <workItem from="1490995413694" duration="1577000" />
-      <workItem from="1491000484409" duration="9734000" />
+      <workItem from="1491000484409" duration="10036000" />
+      <workItem from="1491631450373" duration="15000" />
+      <workItem from="1491631492303" duration="5000" />
+      <workItem from="1491676023249" duration="599000" />
+      <workItem from="1491748333418" duration="1238000" />
+      <workItem from="1492236372125" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31886000" />
+    <option name="totallyTimeSpent" value="35054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1092" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66904277" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18622175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18622175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -674,108 +747,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="141" column="22" lean-forward="false" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#inversion#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#inversion#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="189" column="8" lean-forward="false" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#populationSize#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#matingPopulationSize#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#selectedParents#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#generation#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#cities#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#originalCities#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#chromosomes#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#frame#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
-            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
-            <element signature="method#print#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
-            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
-            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
-            <element signature="method#main#0;class#TSP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#Chromosome#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#calculateCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#calculateCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#getCost#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#getCity#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#setCities#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#setCities#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#setCity#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#generate_bounds#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#generate_bounds#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#reverse_array#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#reverse_array#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#inversion#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#inversion#0;class#Chromosome#0" expanded="false" />
-            <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
-            <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -799,9 +770,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -866,9 +836,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -948,9 +917,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1007,9 +975,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1073,9 +1040,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1139,9 +1105,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1205,9 +1170,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1312,9 +1276,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1344,9 +1307,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1403,9 +1365,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1469,9 +1430,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1535,9 +1495,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1601,9 +1560,8 @@
             <element signature="method#print#0;class#TSP#0" expanded="false" />
             <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
             <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
             <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
             <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
             <element signature="method#main#0;class#TSP#0" expanded="false" />
           </folding>
@@ -1666,50 +1624,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chromosome2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TSP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="195" column="35" lean-forward="false" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#populationSize#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#matingPopulationSize#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#selectedParents#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#generation#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#cities#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#originalCities#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#chromosomes#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#frame#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
-            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
-            <element signature="method#print#0;class#TSP#0" expanded="false" />
-            <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
-            <element signature="e#4516#4554#0" expanded="false" />
-            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
-            <element signature="e#6195#6201#0" expanded="true" />
-            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
-            <element signature="method#main#0;class#TSP#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chromosome2.java" />
     <entry file="file://$PROJECT_DIR$/src/Chromosome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="1156">
+          <caret line="74" column="107" lean-forward="false" selection-start-line="74" selection-start-column="107" selection-end-line="74" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#cost#0;class#Chromosome#0" expanded="false" />
@@ -1730,6 +1649,77 @@
             <element signature="docComment;method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
             <element signature="method#sortChromosomes#0;class#Chromosome#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#cityCount#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#populationSize#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#matingPopulationSize#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#selectedParents#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#generation#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#cities#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#originalCities#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#chromosomes#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#frame#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#min#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;field#width#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="method#writeLog#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#print#0;class#TSP#0" expanded="false" />
+            <element signature="method#print#0;class#TSP#0" expanded="false" />
+            <element signature="docComment;method#updateGUI#0;class#TSP#0" expanded="false" />
+            <element signature="method#updateGUI#0;class#TSP#0" expanded="false" />
+            <element signature="e#4515#4553#0" expanded="false" />
+            <element signature="method#LoadCitiesFromFile#0;class#TSP#0" expanded="false" />
+            <element signature="method#MoveCities#0;class#TSP#0" expanded="false" />
+            <element signature="method#main#0;class#TSP#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_history/9_21.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_history/results.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submission/results.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submission/src/TSP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

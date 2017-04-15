@@ -1,0 +1,1 @@
+We want to estimate with 95% confidence levels, the difference between our means.
